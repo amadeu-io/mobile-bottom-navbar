@@ -29,4 +29,37 @@ html {
 body {
   display: flex;
   align-items: center;
+  justify-content: center;
+  background-color: var(--slate-400);
+}
+
+/* mobile */
+
+.mobile {
+  height: 550px;
+  width: 320px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.screen {
+  background-color: var(--slate-100);
+  width: 100%;
+  height: 100%;
+}
+
+/* navbar */
+
+.navbar-container {
+  width: 100%;
+}
+
+.navbar { /* ul */
+  background-color: white;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }

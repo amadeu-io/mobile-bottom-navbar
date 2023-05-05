@@ -1,0 +1,32 @@
+/* tailwind slate color palette */
+
+:root {
+  --slate-50: #f9fafb;
+  --slate-100: #f3f4f6;
+  --slate-200: #e5e7eb;
+  --slate-300: #d1d5db;
+  --slate-400: #b9c1ce; /*main*/
+  --slate-500: #6b7280;
+  --slate-600: #4b5563;
+  --slate-700: #374151;
+  --slate-800: #1f2937;
+  --slate-900: #111827;
+}
+
+/* general */
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+}

@@ -90,4 +90,17 @@ svg {
   margin-bottom: 5px;
 }
 
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: black;
+}
+
+
+
 

@@ -1,6 +1,7 @@
 const navItems = document.querySelectorAll("li");
 const nightSwitch = document.querySelector(".switch");
 const nightSlider = document.querySelector(".slider");
+let night = false;
 
 navItems.forEach((item, index) => {
   item.addEventListener("click", () => {
@@ -16,5 +17,6 @@ navItems.forEach((item, index) => {
 
 // toggles night switch
 nightSwitch.addEventListener("click", () => {
-  nightSlider.classList.toggle('night');
+  night = !night;
+  nightSlider.classList.toggle("night");
 });

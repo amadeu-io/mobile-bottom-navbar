@@ -84,7 +84,7 @@ li {
   color: var(--purple);
 }
 
-/* svg */
+/* mobile svg */
 
 .mobile svg {
   height: 20px;
@@ -95,11 +95,6 @@ li {
   margin-bottom: 4px;
 }
 
-.switch svg {
-  height: 14px;
-  width: auto;
-  padding: 12px;
-}
 /* night toggle */
 
 .switch-container {
@@ -108,34 +103,40 @@ li {
 }
 
 .switch {
-  /* container */
-  cursor: pointer;
-  border-radius: 24px;
   background-color: var(--slate-100);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  border-radius: 50px;
+  width: 50px;
+  padding: 5px;
+  cursor: pointer;
 }
 
 .slider {
   background-color: #fff;
-  position: absolute;
-  top: 6px;
-  left: 8px;
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   border-radius: 100%;
-  /* border: 1px solid black; */
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+  position: relative; /* put it on top */
   transition: 0.3s;
+}
+
+.night {
+  transform: translateX(27px); /* night mode on */
 }
 
 .night-icon,
 .day-icon {
-  fill: #b5b8bd;
+  height: 14px;
+  width: auto;
+  fill: #c3c5ca;
+  position: absolute;
+  top: 8px;
 }
 
-.night {
-  /* will be added to slider */
-  transform: translateX(35px);
+.day-icon {
+  left: 8px;
+}
+
+.night-icon {
+  right: 8px;
 }

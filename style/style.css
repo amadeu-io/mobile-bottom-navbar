@@ -5,14 +5,14 @@
   --slate-100: #f3f4f6;
   --slate-200: #e5e7eb;
   --slate-300: #d1d5db;
-  --slate-400: #ccd8ea; /*main*/
+  --slate-400: #d3dcea; /*modified*/
   --slate-500: #6b7280;
   --slate-600: #4b5563;
   --slate-700: #374151;
   --slate-800: #1f2937;
   --slate-900: #111827;
 
-  --purple: #5d00ff;
+  --purple: #3c00ff;
 }
 
 /* general */
@@ -92,5 +92,37 @@ svg {
 }
 
 svg {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
+
+/* night toggle */
+
+.night-toggle {
+  position: fixed;
+  bottom: 70px;
+}
+
+.switch { /* container */
+  cursor: pointer;
+  width: 60px;
+  height: 34px;
+  border-radius: 20px;
+  background-color: var(--slate-200);
+  border: 1px solid black;
+}
+
+.slider {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  border: 1px solid black;
+  transition: 0.3s;
+}
+
+.night-on { /* will be added to slider */
+  transform: translateX(26px);
+}
+

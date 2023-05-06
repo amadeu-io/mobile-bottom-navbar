@@ -1,4 +1,6 @@
 const navItems = document.querySelectorAll("li");
+const nightSwitch = document.querySelector(".switch");
+const nightSlider = document.querySelector(".slider");
 
 navItems.forEach((item, index) => {
   item.addEventListener("click", () => {
@@ -10,4 +12,9 @@ navItems.forEach((item, index) => {
     // add active class to clicked link
     item.classList.add("active");
   });
+});
+
+// toggles night switch
+nightSwitch.addEventListener("click", () => {
+  nightSlider.classList.toggle('night-on');
 });

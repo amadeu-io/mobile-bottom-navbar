@@ -16,5 +16,5 @@ navItems.forEach((item, index) => {
 
 // toggles night switch
 nightSwitch.addEventListener("click", () => {
-  nightSlider.classList.toggle('night-on');
+  nightSlider.classList.toggle('night');
 });

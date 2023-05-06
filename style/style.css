@@ -86,43 +86,56 @@ li {
 
 /* svg */
 
-svg {
+.mobile svg {
   height: 20px;
   width: auto;
 }
 
-svg {
+.mobile svg {
   margin-bottom: 4px;
 }
 
+.switch svg {
+  height: 14px;
+  width: auto;
+  padding: 12px;
+}
 /* night toggle */
 
-.night-toggle {
+.switch-container {
   position: fixed;
   bottom: 70px;
 }
 
-.switch { /* container */
+.switch {
+  /* container */
   cursor: pointer;
-  width: 60px;
-  height: 34px;
-  border-radius: 20px;
-  background-color: var(--slate-200);
-  border: 1px solid black;
+  border-radius: 24px;
+  background-color: var(--slate-100);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .slider {
+  background-color: #fff;
   position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 26px;
-  height: 26px;
+  top: 6px;
+  left: 8px;
+  width: 25px;
+  height: 25px;
   border-radius: 100%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
   transition: 0.3s;
 }
 
-.night-on { /* will be added to slider */
-  transform: translateX(26px);
+.night-icon,
+.day-icon {
+  fill: #b5b8bd;
 }
 
+.night {
+  /* will be added to slider */
+  transform: translateX(35px);
+}

@@ -128,15 +128,15 @@ li {
 .day-icon {
   height: 14px;
   width: auto;
-  fill: #c3c5ca;
+  fill: #d3d5dc;
   position: absolute;
   top: 8px;
 }
 
 .day-icon {
-  left: 8px;
+  left: 9px;
 }
 
 .night-icon {
-  right: 8px;
+  right: 9px;
 }

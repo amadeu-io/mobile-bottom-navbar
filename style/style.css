@@ -9,10 +9,10 @@
 
   /* night mode */
   --night-screen: #121417; /* screen bgc */
-  --night-navbar: #1c1d23; /* navbar bgc */
+  --night-navbar: #1e1f26; /* navbar bgc */
   --night-bgc: #505e71; /* page bgc */
   --night-text: #b4bdc8; /* text color */
-  --night-purple: #a575ff; /* highlight color */
+  --night-purple: #ac7fff; /* highlight color */
 }
 
 body {

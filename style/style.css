@@ -1,18 +1,17 @@
 /* tailwind slate color palette */
 
-:root {
-  --slate-50: #f9fafb;
-  --slate-100: #f3f4f6;
-  --slate-200: #e5e7eb;
-  --slate-300: #d1d5db;
-  --slate-400: #d3dcea; /*modified*/
-  --slate-500: #6b7280;
-  --slate-600: #4b5563;
-  --slate-700: #374151;
-  --slate-800: #1f2937;
-  --slate-900: #111827;
+body {
+  --slate-100: #f3f4f6; /* light bgc */
+  --slate-400: #d3dcea; /* blue bgc */
+  --slate-800: #1f2937; /* color */
+  --purple: #3c00ff; /* highlight */
+}
 
-  --purple: #3c00ff;
+body.night-mode {
+  --slate-100: #212121; /* light bgc */
+  --slate-400: #d3dcea; /* blue bgc */
+  --slate-800: #1f2937; /* color */
+  --purple: #3c00ff; /* highlight */
 }
 
 /* general */
@@ -120,7 +119,7 @@ li {
   transition: 0.3s;
 }
 
-.night-on {
+.night-switch {
   transform: translateX(27px); /* night mode on */
 }
 
@@ -128,7 +127,7 @@ li {
 .day-icon {
   height: 14px;
   width: auto;
-  fill: #d3d5dc;
+  fill: #c6c8cc;
   position: absolute;
   top: 8px;
 }

@@ -1,9 +1,16 @@
+// toggles the night mode classes
+function toggleNightMode() {
+  nightSlider.classList.toggle("night-switch");
+  body.classList.toggle("night-mode");
+}
+
+const body = document.querySelector("body");
 const navItems = document.querySelectorAll("li");
 const nightSwitch = document.querySelector(".switch");
 const nightSlider = document.querySelector(".slider");
-let night = false;
 
-navItems.forEach((item, index) => {
+// navbar click highlight color
+navItems.forEach((item) => {
   item.addEventListener("click", () => {
     // remove active class from all links
     navItems.forEach((link) => {
@@ -16,7 +23,4 @@ navItems.forEach((item, index) => {
 });
 
 // toggles night switch
-nightSwitch.addEventListener("click", () => {
-  night = !night;
-  nightSlider.classList.toggle("night-on");
-});
+nightSwitch.addEventListener("click", toggleNightMode);

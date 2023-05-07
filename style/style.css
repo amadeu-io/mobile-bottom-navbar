@@ -1,17 +1,34 @@
-/* tailwind slate color palette */
+/* colors */
+
+:root {
+  /* day mode */
+  --slate-100: #f3f4f6; /* screen bgc */
+  --slate-400: #d3dcea; /* page bgc */
+  --slate-800: #1f2937; /* text color */
+  --purple: #3c00ff; /* highlight color */
+
+  /* night mode */
+  --night-screen: #121417; /* screen bgc */
+  --night-navbar: #1c1d23; /* navbar bgc */
+  --night-bgc: #505e71; /* page bgc */
+  --night-text: #b4bdc8; /* text color */
+  --night-purple: #a575ff; /* highlight color */
+}
 
 body {
-  --slate-100: #f3f4f6; /* light bgc */
-  --slate-400: #d3dcea; /* blue bgc */
-  --slate-800: #1f2937; /* color */
-  --purple: #3c00ff; /* highlight */
+  --screen-bgc: var(--slate-100);
+  --navbar-bgc: white;
+  --page-bgc: var(--slate-400);
+  --text-color: var(--slate-800);
+  --highlight-color: var(--purple);
 }
 
 body.night-mode {
-  --slate-100: #212121; /* light bgc */
-  --slate-400: #d3dcea; /* blue bgc */
-  --slate-800: #1f2937; /* color */
-  --purple: #3c00ff; /* highlight */
+  --screen-bgc: var(--night-screen);
+  --navbar-bgc: var(--night-navbar);
+  --page-bgc: var(--night-bgc);
+  --text-color: var(--night-text);
+  --highlight-color: var(--night-purple);
 }
 
 /* general */
@@ -25,15 +42,15 @@ html {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 10px;
-  color: var(--slate-800);
-  fill: var(--slate-800);
 }
 
 body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--slate-400);
+  background-color: var(--page-bgc);
+  color: var(--text-color);
+  fill: var(--text-color);
 }
 
 /* mobile */
@@ -48,7 +65,7 @@ body {
 }
 
 .screen {
-  background-color: var(--slate-100);
+  background-color: var(--screen-bgc);
   width: 100%;
   height: 100%;
 }
@@ -61,7 +78,7 @@ body {
 
 .navbar {
   /* ul */
-  background-color: white;
+  background-color: var(--navbar-bgc);
   height: 80px;
   display: flex;
   align-items: center;
@@ -79,8 +96,8 @@ li {
 }
 
 .active {
-  fill: var(--purple);
-  color: var(--purple);
+  fill: var(--highlight-color);
+  color: var(--highlight-color);
 }
 
 /* mobile svg */
@@ -102,7 +119,7 @@ li {
 }
 
 .switch {
-  background-color: var(--slate-100);
+  background-color: var(--screen-bgc);
   border-radius: 50px;
   width: 50px;
   padding: 5px;
@@ -110,7 +127,7 @@ li {
 }
 
 .slider {
-  background-color: #fff;
+  background-color: var(--navbar-bgc);
   width: 22px;
   height: 22px;
   border-radius: 100%;

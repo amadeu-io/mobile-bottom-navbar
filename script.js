@@ -4,12 +4,16 @@ function toggleNightMode() {
   body.classList.toggle("night-mode");
 }
 
+// program starts here
+
 const body = document.querySelector("body");
 const navItems = document.querySelectorAll("li");
 const nightSwitch = document.querySelector(".switch");
 const nightSlider = document.querySelector(".slider");
 
-// navbar click highlight color
+toggleNightMode();
+
+// navbar click active color
 navItems.forEach((item) => {
   item.addEventListener("click", () => {
     // remove active class from all links

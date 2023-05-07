@@ -11,8 +11,6 @@ const navItems = document.querySelectorAll("li");
 const nightSwitch = document.querySelector(".switch");
 const nightSlider = document.querySelector(".slider");
 
-toggleNightMode();
-
 // navbar click active color
 navItems.forEach((item) => {
   item.addEventListener("click", () => {

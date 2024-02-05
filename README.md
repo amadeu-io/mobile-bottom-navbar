@@ -7,7 +7,7 @@
   <img src="screenshot/screenshot2.png" width="650px" alt="screenshot">
 </p>
 <h2 align="center">
-  <a href="https://amadeu-io.github.io/mobile-bottom-navbar">👉 Demo</a>
+  <a href="https://amadeuio.github.io/mobile-bottom-navbar">👉 Demo</a>
 </h2>
 
 ### About 📖

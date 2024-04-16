@@ -1,0 +1,96 @@
+/* colors */
+
+:root {
+  /* Day Colors */
+  --slate-100: #f3f4f6;
+  --slate-400: #d3dcea;
+
+  /* Night Colors */
+  --night-screen: #121417;
+  --night-navbar: #1e1f26;
+  --night-bgc: #505e71;
+}
+
+.app {
+  --page-bgc: var(--slate-400);
+}
+
+.app.nightMode {
+  --page-bgc: var(--night-bgc);
+}
+
+body {
+  transition: background-color 0.2s ease;
+}
+
+/* General */
+
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--page-bgc);
+}
+
+/* Night Switch */
+
+.nightSwitch {
+  --switch-bgc: var(--slate-100);
+  --slider-bgc: white;
+}
+
+.nightSwitch.switchNightOn {
+  --switch-bgc: var(--night-screen);
+  --slider-bgc: var(--night-navbar);
+}
+
+.nightSwitch {
+  background-color: var(--switch-bgc);
+  border-radius: 50px;
+  width: 50px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.slider {
+  background-color: var(--slider-bgc);
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+  position: relative;
+  transition: 0.3s;
+}
+
+.sliderNightOn {
+  transform: translateX(27px);
+}
+
+/* Icon Positioning */
+
+.nightIcon,
+.dayIcon {
+  height: 14px;
+  width: 14px;
+  fill: #c6c8cc;
+}
+
+.nightSwitch {
+  position: relative;
+}
+
+.nightIcon,
+.dayIcon {
+  position: absolute;
+  top: 8px;
+}
+
+.dayIcon {
+  left: 9px;
+}
+
+.nightIcon {
+  right: 9px;
+}
